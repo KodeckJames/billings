@@ -15,7 +15,7 @@ app = FastAPI(title="Africa's Talking Voice API", version="1.0.0")
 AT_apiKey = os.getenv("AFRICASTALKING_API_KEY")
 AT_username = os.getenv("AFRICASTALKING_USERNAME") 
 AT_virtualNumber = os.getenv("VIRTUAL_NUMBER")
-APP_URL = os.getenv("APP_URL", "https://your-domain.com")  # Change this to your domain
+APP_URL = os.getenv("APP_URL", "https://billings-ijgg.onrender.com/")  # Change this to your domain
 
 ATVoice = VoiceHelper(AT_apiKey, AT_username, AT_virtualNumber)
 
